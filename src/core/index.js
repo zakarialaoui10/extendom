@@ -5,6 +5,15 @@ class DOMElement {
     this.attributes = {};
     this.textContent = '';
   }
+  get outerHTML(){
+    const attrs = Object.entries(this.attributes)
+      .map(([k, v]) => ` ${k}="${v}"`)
+      .join('');
+    const childrenStr = this.children.map(c =>
+      typeof c === 'string' ? c : c.toString()
+    ).join('');
+    return `<${this.tag}${attrs}>${this.textContent}${childrenStr}</${this.tag}>`;
+  }
   setAttribute(name, value) {
     this.attributes[name] = value;
   }

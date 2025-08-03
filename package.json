@@ -7,9 +7,9 @@
     "server",
     "html"
   ],
-  "exports":{
+  "exports": {
     ".": "./src/core/index.js",
-    "./methods" : "./src/methods/index.js"
+    "./methods": "./src/methods/index.js"
   },
   "homepage": "https://github.com/zakarialaoui10/extendom#readme",
   "bugs": {
@@ -25,5 +25,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ziko": "^0.33.0"
   }
 }

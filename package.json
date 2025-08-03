@@ -1,0 +1,29 @@
+{
+  "name": "extendom",
+  "version": "0.0.0",
+  "description": "A pluggable, minimal DOM system for server-side rendering and HTML generation",
+  "keywords": [
+    "dom",
+    "server",
+    "html"
+  ],
+  "exports":{
+    ".": "./src/core/index.js",
+    "./methods" : "./src/methods/index.js"
+  },
+  "homepage": "https://github.com/zakarialaoui10/extendom#readme",
+  "bugs": {
+    "url": "https://github.com/zakarialaoui10/extendom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakarialaoui10/extendom.git"
+  },
+  "license": "MIT",
+  "author": "zakaria elalaoui",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,36 +1,4 @@
-class DOMElement {
-  constructor(tag) {
-    this.tag = tag;
-    this.children = [];
-    this.attributes = {};
-    this.textContent = '';
-  }
-  get outerHTML(){
-    const attrs = Object.entries(this.attributes)
-      .map(([k, v]) => ` ${k}="${v}"`)
-      .join('');
-    const childrenStr = this.children.map(c =>
-      typeof c === 'string' ? c : c.toString()
-    ).join('');
-    return `<${this.tag}${attrs}>${this.textContent}${childrenStr}</${this.tag}>`;
-  }
-  setAttribute(name, value) {
-    this.attributes[name] = value;
-  }
-  appendChild(child) {
-    this.children.push(child);
-  }
-  toString() {
-    const attrs = Object.entries(this.attributes)
-      .map(([k, v]) => ` ${k}="${v}"`)
-      .join('');
-    const childrenStr = this.children.map(c =>
-      typeof c === 'string' ? c : c.toString()
-    ).join('');
-    return `<${this.tag}${attrs}>${this.textContent}${childrenStr}</${this.tag}>`;
-  }
-}
-
+import { DOMElement } from "./dom.js"
 export function InitDom() {
   globalThis.document = {
     createElement(tag) {
@@ -43,3 +11,6 @@ export function InitDom() {
   };
 }
 
+export{
+    DOMElement
+}

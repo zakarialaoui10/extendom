@@ -1,6 +1,6 @@
 {
   "name": "extendom",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A pluggable, minimal DOM system for server-side rendering and HTML generation",
   "keywords": [
     "dom",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "author": "zakaria elalaoui",
   "type": "module",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

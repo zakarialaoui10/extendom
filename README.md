@@ -1,6 +1,7 @@
 # extendom
 A pluggable, minimal DOM system for server-side rendering and HTML generation 
 
+
 ## Philosophy
 Extendom follows the **"only what you need"** approach. The core includes just the minimal set of methods (e.g., .setAttr, .append, .textContent) to create and manipulate basic DOM-like structures. Other Features are available as opt-in plugins you can import only when needed.
 
